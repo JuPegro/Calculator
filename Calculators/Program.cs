@@ -17,7 +17,7 @@ namespace Calculators
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCalculator());
+            Application.Run(FrmCalculator.Intance);
         }
     }
 }

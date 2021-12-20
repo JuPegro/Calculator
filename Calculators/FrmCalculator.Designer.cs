@@ -1,7 +1,7 @@
 ﻿
 namespace Calculators
 {
-    partial class Form1
+    partial class FrmCalculator
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,6 +29,7 @@ namespace Calculators
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCalculator));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.LblView = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -47,7 +48,7 @@ namespace Calculators
             this.BtnSubtract = new System.Windows.Forms.Button();
             this.BtnSeven = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.button18 = new System.Windows.Forms.Button();
+            this.BtnResult = new System.Windows.Forms.Button();
             this.BtnZero = new System.Windows.Forms.Button();
             this.BtnPoint = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -359,7 +360,7 @@ namespace Calculators
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.button18, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.BtnResult, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.BtnZero, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.BtnPoint, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -370,21 +371,21 @@ namespace Calculators
             this.tableLayoutPanel6.Size = new System.Drawing.Size(318, 63);
             this.tableLayoutPanel6.TabIndex = 6;
             // 
-            // button18
+            // BtnResult
             // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(196)))), ((int)(((byte)(217)))));
-            this.button18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(92)))));
-            this.button18.Location = new System.Drawing.Point(161, 3);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(154, 57);
-            this.button18.TabIndex = 3;
-            this.button18.Text = "=";
-            this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.BtnResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(196)))), ((int)(((byte)(217)))));
+            this.BtnResult.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnResult.FlatAppearance.BorderSize = 0;
+            this.BtnResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnResult.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnResult.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(92)))));
+            this.BtnResult.Location = new System.Drawing.Point(161, 3);
+            this.BtnResult.Name = "BtnResult";
+            this.BtnResult.Size = new System.Drawing.Size(154, 57);
+            this.BtnResult.TabIndex = 3;
+            this.BtnResult.Text = "=";
+            this.BtnResult.UseVisualStyleBackColor = false;
+            this.BtnResult.Click += new System.EventHandler(this.BtnResult_Click);
             // 
             // BtnZero
             // 
@@ -486,14 +487,15 @@ namespace Calculators
             this.BtnDivision.UseVisualStyleBackColor = false;
             this.BtnDivision.Click += new System.EventHandler(this.BtnDivision_Click);
             // 
-            // Form1
+            // FrmCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(324, 458);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "FrmCalculator";
+            this.Text = "Calculator";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -525,7 +527,7 @@ namespace Calculators
         private System.Windows.Forms.Button BtnSubtract;
         private System.Windows.Forms.Button BtnSeven;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button BtnResult;
         private System.Windows.Forms.Button BtnZero;
         private System.Windows.Forms.Button BtnPoint;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;

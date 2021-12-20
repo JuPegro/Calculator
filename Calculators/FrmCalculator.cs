@@ -10,9 +10,17 @@ using System.Windows.Forms;
 
 namespace Calculators
 {
-    public partial class Form1 : Form
+    public partial class FrmCalculator : Form
     {
-        public Form1()
+        public static FrmCalculator Intance { get; } = new FrmCalculator();
+
+        string first = "";
+        string second = "";
+        char function;
+        double result = 0.0;
+        string userImput = "";
+
+        public FrmCalculator()
         {
             InitializeComponent();
         }
@@ -22,60 +30,62 @@ namespace Calculators
 
         private void BtnPoint_Click(object sender, EventArgs e)
         {
-
+            LblView.Text += ".";
         }
 
         private void BtnOne_Click(object sender, EventArgs e)
         {
+            LblView.Text += " ";
 
+            LblView.Text += "1";
         }
 
         private void BtnTwo_Click(object sender, EventArgs e)
         {
-
+            LblView.Text += "2";
         }
 
         private void BtnThree_Click(object sender, EventArgs e)
         {
-
+            LblView.Text += "3";
         }
 
         private void BtnFour_Click(object sender, EventArgs e)
         {
-
+            LblView.Text += "4";
         }
 
         private void BtnFive_Click(object sender, EventArgs e)
         {
-
+            LblView.Text += "5";
         }
 
         private void BtnSix_Click(object sender, EventArgs e)
         {
-
+            LblView.Text += "6";
         }
 
         private void BtnSeven_Click(object sender, EventArgs e)
         {
-
+            LblView.Text += "7";
         }
 
         private void BtnEight_Click(object sender, EventArgs e)
         {
-
+            LblView.Text += "8";
         }
 
         private void BtnNine_Click(object sender, EventArgs e)
         {
-
+            LblView.Text += "9";
         }
 
         private void BtnZero_Click(object sender, EventArgs e)
         {
-
+            LblView.Text += "0";
         }
 
-        #endregion          //
+        #endregion         
 
 
         //Buttons assigned to Operations
@@ -83,25 +93,25 @@ namespace Calculators
 
         private void BtnDivision_Click(object sender, EventArgs e)
         {
-
+            function = '/';
         }
 
         private void BtnMulti_Click(object sender, EventArgs e)
         {
-
+            function = '*';
         }
 
         private void BtnSum_Click(object sender, EventArgs e)
         {
-
+            function = '+';
         }
 
         private void BtnSubtract_Click(object sender, EventArgs e)
         {
-
+            function = '-';
         }
 
-        private void button18_Click(object sender, EventArgs e)
+        private void BtnResult_Click(object sender, EventArgs e)
         {
 
         }
@@ -113,6 +123,6 @@ namespace Calculators
         #region "Essential Buttons "
 
 
-        #endregion
+        #endregion        
     }
 }
