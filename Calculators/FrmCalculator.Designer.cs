@@ -451,6 +451,7 @@ namespace Calculators
             this.BtnBack.TabIndex = 5;
             this.BtnBack.Text = "←";
             this.BtnBack.UseVisualStyleBackColor = false;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnClear
             // 
@@ -470,6 +471,7 @@ namespace Calculators
             this.BtnClear.TabIndex = 4;
             this.BtnClear.Text = "C";
             this.BtnClear.UseVisualStyleBackColor = false;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // BtnDivision
             // 

@@ -18,7 +18,7 @@ namespace Calculators
         string second = "";
         char function;
         double result = 0.0;
-        string userImput = "";
+        string Imput = "";
 
         public FrmCalculator()
         {
@@ -30,59 +30,94 @@ namespace Calculators
 
         private void BtnPoint_Click(object sender, EventArgs e)
         {
-            LblView.Text += ".";
-        }
+            if (Imput == "")
+            {
+                LblView.Text = "";
+                Imput += "0.";
+                LblView.Text += Imput;
+            }
+            else if (Imput != "" && !Imput.Contains("."))
+            {
+                LblView.Text = "";
+                Imput += ".";
+                LblView.Text += Imput;
+            }
+            else if (Imput.Contains("."))
+            {
+                LblView.Text = "";
+                LblView.Text += Imput;
+            }
+        }          
+        
 
         private void BtnOne_Click(object sender, EventArgs e)
         {
-            LblView.Text += " ";
-
-            LblView.Text += "1";
+            LblView.Text = "";
+            Imput += "1";
+            LblView.Text += Imput;
         }
 
         private void BtnTwo_Click(object sender, EventArgs e)
         {
-            LblView.Text += "2";
+            LblView.Text = "";
+            Imput += "2";
+            LblView.Text += Imput;
         }
 
         private void BtnThree_Click(object sender, EventArgs e)
         {
-            LblView.Text += "3";
+            LblView.Text = "";
+            Imput += "3";
+            LblView.Text += Imput;
         }
 
         private void BtnFour_Click(object sender, EventArgs e)
         {
-            LblView.Text += "4";
+            LblView.Text = "";
+            Imput += "4";
+            LblView.Text += Imput;
         }
 
         private void BtnFive_Click(object sender, EventArgs e)
         {
-            LblView.Text += "5";
+            LblView.Text = "";
+            Imput += "5";
+            LblView.Text += Imput;
         }
 
         private void BtnSix_Click(object sender, EventArgs e)
         {
-            LblView.Text += "6";
+            LblView.Text = "";
+            Imput += "6";
+            LblView.Text += Imput;
         }
 
         private void BtnSeven_Click(object sender, EventArgs e)
         {
-            LblView.Text += "7";
+            LblView.Text = "";
+            Imput += "7";
+            LblView.Text += Imput;
         }
 
         private void BtnEight_Click(object sender, EventArgs e)
         {
-            LblView.Text += "8";
+            LblView.Text = "";
+            Imput += "8";
+            LblView.Text += Imput;
         }
 
         private void BtnNine_Click(object sender, EventArgs e)
         {
-            LblView.Text += "9";
+            LblView.Text = "";
+            Imput += "9";
+            LblView.Text += Imput;
         }
 
         private void BtnZero_Click(object sender, EventArgs e)
         {
-            LblView.Text += "0";
+            LblView.Text = "";
+            Imput += "0";
+            LblView.Text += Imput;
         }
 
         #endregion         
@@ -120,8 +155,17 @@ namespace Calculators
 
 
         //Buttons assigned to role
-        #region "Essential Buttons "
+        #region "Essential Buttons"
 
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+
+        }
 
         #endregion        
     }
