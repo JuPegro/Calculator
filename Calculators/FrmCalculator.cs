@@ -159,12 +159,32 @@ namespace Calculators
 
         private void BtnClear_Click(object sender, EventArgs e)
         {
+            LblView.Text = "0";
 
+            first = "";
+
+            second = "";
+
+            function = '0';
+
+            result = 0.0;
+
+            Imput = "";
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
+            if (Imput.Length > 0)
+            {
+                Imput = Imput.Remove(Imput.Length - 1);
 
+                LblView.Text = Imput;
+
+                if (Imput.Length == 0)
+                {
+                    LblView.Text = "0";
+                }
+            }            
         }
 
         #endregion        
