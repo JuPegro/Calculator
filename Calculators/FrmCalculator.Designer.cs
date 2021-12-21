@@ -66,7 +66,8 @@ namespace Calculators
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(92)))));
-            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.30864F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.76543F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.92593F));
@@ -99,15 +100,16 @@ namespace Calculators
             this.LblView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblView.Font = new System.Drawing.Font("Nonchalance", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(147)))), ((int)(((byte)(71)))));
-            this.LblView.Location = new System.Drawing.Point(3, 0);
+            this.LblView.Location = new System.Drawing.Point(4, 1);
             this.LblView.Name = "LblView";
-            this.LblView.Size = new System.Drawing.Size(318, 121);
+            this.LblView.Size = new System.Drawing.Size(316, 119);
             this.LblView.TabIndex = 1;
             this.LblView.Text = "0";
             this.LblView.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel3.ColumnCount = 4;
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel3, 3);
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -119,11 +121,11 @@ namespace Calculators
             this.tableLayoutPanel3.Controls.Add(this.BtnMulti, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.BtnOne, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 191);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 191);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(318, 61);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(316, 60);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // BtnTwo
@@ -133,9 +135,9 @@ namespace Calculators
             this.BtnTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnTwo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnTwo.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnTwo.Location = new System.Drawing.Point(161, 3);
+            this.BtnTwo.Location = new System.Drawing.Point(160, 4);
             this.BtnTwo.Name = "BtnTwo";
-            this.BtnTwo.Size = new System.Drawing.Size(73, 55);
+            this.BtnTwo.Size = new System.Drawing.Size(71, 52);
             this.BtnTwo.TabIndex = 4;
             this.BtnTwo.Text = "2";
             this.BtnTwo.UseVisualStyleBackColor = true;
@@ -148,9 +150,9 @@ namespace Calculators
             this.BtnThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnThree.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnThree.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnThree.Location = new System.Drawing.Point(240, 3);
+            this.BtnThree.Location = new System.Drawing.Point(238, 4);
             this.BtnThree.Name = "BtnThree";
-            this.BtnThree.Size = new System.Drawing.Size(75, 55);
+            this.BtnThree.Size = new System.Drawing.Size(74, 52);
             this.BtnThree.TabIndex = 3;
             this.BtnThree.Text = "3";
             this.BtnThree.UseVisualStyleBackColor = true;
@@ -164,9 +166,9 @@ namespace Calculators
             this.BtnMulti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMulti.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnMulti.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnMulti.Location = new System.Drawing.Point(3, 3);
+            this.BtnMulti.Location = new System.Drawing.Point(4, 4);
             this.BtnMulti.Name = "BtnMulti";
-            this.BtnMulti.Size = new System.Drawing.Size(73, 55);
+            this.BtnMulti.Size = new System.Drawing.Size(71, 52);
             this.BtnMulti.TabIndex = 2;
             this.BtnMulti.Text = "x";
             this.BtnMulti.UseVisualStyleBackColor = false;
@@ -178,14 +180,12 @@ namespace Calculators
             this.BtnOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(92)))));
             this.BtnOne.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnOne.FlatAppearance.BorderSize = 0;
-            this.BtnOne.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(196)))), ((int)(((byte)(217)))));
-            this.BtnOne.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(196)))), ((int)(((byte)(217)))));
             this.BtnOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnOne.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnOne.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnOne.Location = new System.Drawing.Point(82, 3);
+            this.BtnOne.Location = new System.Drawing.Point(82, 4);
             this.BtnOne.Name = "BtnOne";
-            this.BtnOne.Size = new System.Drawing.Size(73, 55);
+            this.BtnOne.Size = new System.Drawing.Size(71, 52);
             this.BtnOne.TabIndex = 1;
             this.BtnOne.Text = "1";
             this.BtnOne.UseVisualStyleBackColor = false;
@@ -193,6 +193,7 @@ namespace Calculators
             // 
             // tableLayoutPanel4
             // 
+            this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel4.ColumnCount = 4;
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel4, 3);
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -204,11 +205,11 @@ namespace Calculators
             this.tableLayoutPanel4.Controls.Add(this.BtnSum, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.BtnFour, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 258);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 258);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(318, 61);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(316, 60);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
             // BtnFive
@@ -218,9 +219,9 @@ namespace Calculators
             this.BtnFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFive.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnFive.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnFive.Location = new System.Drawing.Point(161, 3);
+            this.BtnFive.Location = new System.Drawing.Point(160, 4);
             this.BtnFive.Name = "BtnFive";
-            this.BtnFive.Size = new System.Drawing.Size(73, 55);
+            this.BtnFive.Size = new System.Drawing.Size(71, 52);
             this.BtnFive.TabIndex = 4;
             this.BtnFive.Text = "5";
             this.BtnFive.UseVisualStyleBackColor = true;
@@ -233,9 +234,9 @@ namespace Calculators
             this.BtnSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSix.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnSix.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnSix.Location = new System.Drawing.Point(240, 3);
+            this.BtnSix.Location = new System.Drawing.Point(238, 4);
             this.BtnSix.Name = "BtnSix";
-            this.BtnSix.Size = new System.Drawing.Size(75, 55);
+            this.BtnSix.Size = new System.Drawing.Size(74, 52);
             this.BtnSix.TabIndex = 3;
             this.BtnSix.Text = "6";
             this.BtnSix.UseVisualStyleBackColor = true;
@@ -249,9 +250,9 @@ namespace Calculators
             this.BtnSum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSum.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnSum.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnSum.Location = new System.Drawing.Point(3, 3);
+            this.BtnSum.Location = new System.Drawing.Point(4, 4);
             this.BtnSum.Name = "BtnSum";
-            this.BtnSum.Size = new System.Drawing.Size(73, 55);
+            this.BtnSum.Size = new System.Drawing.Size(71, 52);
             this.BtnSum.TabIndex = 2;
             this.BtnSum.Text = "+";
             this.BtnSum.UseVisualStyleBackColor = false;
@@ -264,9 +265,9 @@ namespace Calculators
             this.BtnFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFour.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnFour.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnFour.Location = new System.Drawing.Point(82, 3);
+            this.BtnFour.Location = new System.Drawing.Point(82, 4);
             this.BtnFour.Name = "BtnFour";
-            this.BtnFour.Size = new System.Drawing.Size(73, 55);
+            this.BtnFour.Size = new System.Drawing.Size(71, 52);
             this.BtnFour.TabIndex = 1;
             this.BtnFour.Text = "4";
             this.BtnFour.UseVisualStyleBackColor = true;
@@ -274,6 +275,7 @@ namespace Calculators
             // 
             // tableLayoutPanel5
             // 
+            this.tableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel5.ColumnCount = 4;
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel5, 3);
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -285,11 +287,11 @@ namespace Calculators
             this.tableLayoutPanel5.Controls.Add(this.BtnSubtract, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.BtnSeven, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 325);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 325);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(318, 61);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(316, 60);
             this.tableLayoutPanel5.TabIndex = 5;
             // 
             // BtnEight
@@ -299,9 +301,9 @@ namespace Calculators
             this.BtnEight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEight.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnEight.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnEight.Location = new System.Drawing.Point(161, 3);
+            this.BtnEight.Location = new System.Drawing.Point(160, 4);
             this.BtnEight.Name = "BtnEight";
-            this.BtnEight.Size = new System.Drawing.Size(73, 55);
+            this.BtnEight.Size = new System.Drawing.Size(71, 52);
             this.BtnEight.TabIndex = 4;
             this.BtnEight.Text = "8";
             this.BtnEight.UseVisualStyleBackColor = true;
@@ -314,9 +316,9 @@ namespace Calculators
             this.BtnNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnNine.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnNine.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnNine.Location = new System.Drawing.Point(240, 3);
+            this.BtnNine.Location = new System.Drawing.Point(238, 4);
             this.BtnNine.Name = "BtnNine";
-            this.BtnNine.Size = new System.Drawing.Size(75, 55);
+            this.BtnNine.Size = new System.Drawing.Size(74, 52);
             this.BtnNine.TabIndex = 3;
             this.BtnNine.Text = "9";
             this.BtnNine.UseVisualStyleBackColor = true;
@@ -330,9 +332,9 @@ namespace Calculators
             this.BtnSubtract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSubtract.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnSubtract.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnSubtract.Location = new System.Drawing.Point(3, 3);
+            this.BtnSubtract.Location = new System.Drawing.Point(4, 4);
             this.BtnSubtract.Name = "BtnSubtract";
-            this.BtnSubtract.Size = new System.Drawing.Size(73, 55);
+            this.BtnSubtract.Size = new System.Drawing.Size(71, 52);
             this.BtnSubtract.TabIndex = 2;
             this.BtnSubtract.Text = "-";
             this.BtnSubtract.UseVisualStyleBackColor = false;
@@ -345,9 +347,9 @@ namespace Calculators
             this.BtnSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSeven.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnSeven.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnSeven.Location = new System.Drawing.Point(82, 3);
+            this.BtnSeven.Location = new System.Drawing.Point(82, 4);
             this.BtnSeven.Name = "BtnSeven";
-            this.BtnSeven.Size = new System.Drawing.Size(73, 55);
+            this.BtnSeven.Size = new System.Drawing.Size(71, 52);
             this.BtnSeven.TabIndex = 1;
             this.BtnSeven.Text = "7";
             this.BtnSeven.UseVisualStyleBackColor = true;
@@ -355,6 +357,7 @@ namespace Calculators
             // 
             // tableLayoutPanel6
             // 
+            this.tableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel6, 3);
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -364,11 +367,11 @@ namespace Calculators
             this.tableLayoutPanel6.Controls.Add(this.BtnZero, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.BtnPoint, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 392);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(4, 392);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(318, 63);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(316, 62);
             this.tableLayoutPanel6.TabIndex = 6;
             // 
             // BtnResult
@@ -379,9 +382,9 @@ namespace Calculators
             this.BtnResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnResult.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnResult.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(92)))));
-            this.BtnResult.Location = new System.Drawing.Point(161, 3);
+            this.BtnResult.Location = new System.Drawing.Point(162, 4);
             this.BtnResult.Name = "BtnResult";
-            this.BtnResult.Size = new System.Drawing.Size(154, 57);
+            this.BtnResult.Size = new System.Drawing.Size(150, 54);
             this.BtnResult.TabIndex = 3;
             this.BtnResult.Text = "=";
             this.BtnResult.UseVisualStyleBackColor = false;
@@ -394,9 +397,9 @@ namespace Calculators
             this.BtnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnZero.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnZero.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnZero.Location = new System.Drawing.Point(82, 3);
+            this.BtnZero.Location = new System.Drawing.Point(83, 4);
             this.BtnZero.Name = "BtnZero";
-            this.BtnZero.Size = new System.Drawing.Size(73, 57);
+            this.BtnZero.Size = new System.Drawing.Size(72, 54);
             this.BtnZero.TabIndex = 2;
             this.BtnZero.Text = "0";
             this.BtnZero.UseVisualStyleBackColor = true;
@@ -410,9 +413,9 @@ namespace Calculators
             this.BtnPoint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPoint.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnPoint.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnPoint.Location = new System.Drawing.Point(3, 3);
+            this.BtnPoint.Location = new System.Drawing.Point(4, 4);
             this.BtnPoint.Name = "BtnPoint";
-            this.BtnPoint.Size = new System.Drawing.Size(73, 57);
+            this.BtnPoint.Size = new System.Drawing.Size(72, 54);
             this.BtnPoint.TabIndex = 1;
             this.BtnPoint.Text = ".";
             this.BtnPoint.UseVisualStyleBackColor = false;
@@ -420,6 +423,7 @@ namespace Calculators
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel2, 3);
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.84277F));
@@ -429,12 +433,12 @@ namespace Calculators
             this.tableLayoutPanel2.Controls.Add(this.BtnClear, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.BtnDivision, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 124);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 124);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(318, 61);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(316, 60);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // BtnBack
@@ -445,9 +449,9 @@ namespace Calculators
             this.BtnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBack.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(92)))));
-            this.BtnBack.Location = new System.Drawing.Point(214, 3);
+            this.BtnBack.Location = new System.Drawing.Point(212, 4);
             this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(101, 55);
+            this.BtnBack.Size = new System.Drawing.Size(100, 52);
             this.BtnBack.TabIndex = 5;
             this.BtnBack.Text = "←";
             this.BtnBack.UseVisualStyleBackColor = false;
@@ -465,9 +469,9 @@ namespace Calculators
             this.BtnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnClear.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnClear.Location = new System.Drawing.Point(82, 3);
+            this.BtnClear.Location = new System.Drawing.Point(82, 4);
             this.BtnClear.Name = "BtnClear";
-            this.BtnClear.Size = new System.Drawing.Size(126, 55);
+            this.BtnClear.Size = new System.Drawing.Size(123, 52);
             this.BtnClear.TabIndex = 4;
             this.BtnClear.Text = "C";
             this.BtnClear.UseVisualStyleBackColor = false;
@@ -481,9 +485,9 @@ namespace Calculators
             this.BtnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDivision.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnDivision.ForeColor = System.Drawing.Color.Honeydew;
-            this.BtnDivision.Location = new System.Drawing.Point(3, 3);
+            this.BtnDivision.Location = new System.Drawing.Point(4, 4);
             this.BtnDivision.Name = "BtnDivision";
-            this.BtnDivision.Size = new System.Drawing.Size(73, 55);
+            this.BtnDivision.Size = new System.Drawing.Size(71, 52);
             this.BtnDivision.TabIndex = 3;
             this.BtnDivision.Text = " /";
             this.BtnDivision.UseVisualStyleBackColor = false;

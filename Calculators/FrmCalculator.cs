@@ -160,6 +160,8 @@ namespace Calculators
                     }
                     else
                     {
+                        function = 1;
+
                         result = firstnum / secondNum;
 
                         LblView.Text = result.ToString();
@@ -192,6 +194,8 @@ namespace Calculators
             {
                 try
                 {
+                    function = 2;
+
                     LblView.Text = "0";
 
                     second = Imput;
@@ -233,6 +237,8 @@ namespace Calculators
             {
                 try
                 {
+                    function = 3;
+
                     LblView.Text = "0";
 
                     second = Imput;
@@ -274,6 +280,8 @@ namespace Calculators
             {
                 try
                 {
+                    function = 4;
+
                     LblView.Text = "0";
 
                     second = Imput;
@@ -330,6 +338,8 @@ namespace Calculators
                             first = Convert.ToString(result);
 
                             Imput = "";
+
+                            function = 0;
                         }
                         break;
                     case (int)OperationsEnum.MULTIPLY:
@@ -340,6 +350,8 @@ namespace Calculators
                         first = Convert.ToString(result);
 
                         Imput = "";
+
+                        function = 0;
                         break;
                     case (int)OperationsEnum.ADDITION:
                         result = firstnum + secondNum;
@@ -349,6 +361,8 @@ namespace Calculators
                         first = Convert.ToString(result);
 
                         Imput = "";
+
+                        function = 0;
                         break;
                     case (int)OperationsEnum.SUBTRACTION:
                         result = firstnum - secondNum;
@@ -358,6 +372,8 @@ namespace Calculators
                         first = Convert.ToString(result);
 
                         Imput = "";
+
+                        function = 0;
                         break;
                 }
             }
@@ -404,6 +420,6 @@ namespace Calculators
             }            
         }
 
-        #endregion        
+        #endregion
     }
 }
