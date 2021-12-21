@@ -16,7 +16,7 @@ namespace Calculators
 
         string first = "";
         string second = "";
-        char function;
+        int function;
         double result = 0.0;
         string Imput = "";
 
@@ -128,26 +128,243 @@ namespace Calculators
 
         private void BtnDivision_Click(object sender, EventArgs e)
         {
-            function = '/';
+            if (first == "")
+            {
+                function = 1;
+
+                LblView.Text = "0";
+
+                first = Imput;
+
+                Imput = "";
+            }
+            else if (first != "")
+            {
+                try
+                {
+                    LblView.Text = "0";
+
+                    second = Imput;
+
+                    double firstnum, secondNum;
+
+                    firstnum = Convert.ToDouble(first);
+
+                    secondNum = Convert.ToDouble(second);
+
+                    if (secondNum == 0)
+                    {
+                        LblView.Text = "Error";
+
+                        MessageBox.Show("Cannot divide by 0", "Error");
+                    }
+                    else
+                    {
+                        result = firstnum / secondNum;
+
+                        LblView.Text = result.ToString();
+
+                        first = Convert.ToString(result);
+
+                        Imput = "";
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
         }
 
         private void BtnMulti_Click(object sender, EventArgs e)
         {
-            function = '*';
+            if (first == "")
+            {
+                function = 2;
+
+                LblView.Text = "0";
+
+                first = Imput;
+
+                Imput = "";
+            }
+            else if (first != "")
+            {
+                try
+                {
+                    LblView.Text = "0";
+
+                    second = Imput;
+
+                    double firstnum, secondNum;
+
+                    firstnum = Convert.ToDouble(first);
+
+                    secondNum = Convert.ToDouble(second);
+
+                    result = firstnum * secondNum;
+
+                    LblView.Text = result.ToString();
+
+                    first = Convert.ToString(result);
+
+                    Imput = "";
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
         }
 
         private void BtnSum_Click(object sender, EventArgs e)
         {
-            function = '+';
+            if(first == "")
+            {
+                function = 3;
+
+                LblView.Text = "0";
+
+                first = Imput;
+
+                Imput = "";
+            }
+            else if (first != "")
+            {
+                try
+                {
+                    LblView.Text = "0";
+
+                    second = Imput;
+
+                    double firstnum, secondNum;
+
+                    firstnum = Convert.ToDouble(first);
+
+                    secondNum = Convert.ToDouble(second);
+
+                    result = firstnum + secondNum;
+
+                    LblView.Text = result.ToString();
+
+                    first = Convert.ToString(result);
+
+                    Imput = "";
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
         }
 
         private void BtnSubtract_Click(object sender, EventArgs e)
         {
-            function = '-';
+            if (first == "")
+            {
+                function = 4;
+
+                LblView.Text = "0";
+
+                first = Imput;
+
+                Imput = "";
+            }
+            else if (first != "")
+            {
+                try
+                {
+                    LblView.Text = "0";
+
+                    second = Imput;
+
+                    double firstnum, secondNum;
+
+                    firstnum = Convert.ToDouble(first);
+
+                    secondNum = Convert.ToDouble(second);
+
+                    result = firstnum - secondNum;
+
+                    LblView.Text = result.ToString();
+
+                    first = Convert.ToString(result);
+
+                    Imput = "";
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }            
         }
 
         private void BtnResult_Click(object sender, EventArgs e)
         {
+            try
+            {
+                second = Imput;
+
+                double firstnum, secondNum;
+
+                firstnum = Convert.ToDouble(first);
+
+                secondNum = Convert.ToDouble(second);                
+
+                switch (function)
+                {
+                    case (int)OperationsEnum.DIVISION:
+
+                        if (secondNum == 0)
+                        {
+                            LblView.Text = "Error";
+
+                            MessageBox.Show("Cannot divide by 0", "Error");
+                        }
+                        else
+                        {
+                            result = firstnum / secondNum;
+
+                            LblView.Text = result.ToString();
+
+                            first = Convert.ToString(result);
+
+                            Imput = "";
+                        }
+                        break;
+                    case (int)OperationsEnum.MULTIPLY:
+                        result = firstnum * secondNum;
+
+                        LblView.Text = result.ToString();
+
+                        first = Convert.ToString(result);
+
+                        Imput = "";
+                        break;
+                    case (int)OperationsEnum.ADDITION:
+                        result = firstnum + secondNum;
+
+                        LblView.Text = result.ToString();
+                        
+                        first = Convert.ToString(result);
+
+                        Imput = "";
+                        break;
+                    case (int)OperationsEnum.SUBTRACTION:
+                        result = firstnum - secondNum;
+
+                        LblView.Text = result.ToString();
+
+                        first = Convert.ToString(result);
+
+                        Imput = "";
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
 
         }
 
